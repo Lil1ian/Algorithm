@@ -23,3 +23,26 @@ public class Solution {
         array[a] = tmp;
     }
 }
+
+
+/**
+ *Solution 2
+ */
+
+public class Solution {
+    public int[] moveZeroes(int[] nums) {
+        int N = nums.length;
+        int j=0;
+        for(int i=0; i<N; i++) {
+            if(nums[i]!=0) {
+                nums[j] = nums[i];
+                j++;
+            }
+        }
+        int m;
+        for(m=j; m<N; m++) {
+            nums[m] = 0;
+        }
+        return nums;
+    }
+}
