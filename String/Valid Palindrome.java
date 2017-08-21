@@ -17,8 +17,6 @@ public class Solution {
 class Solution {
     
     public boolean isPalindrome(String s) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
         
         if(s.equals("")) return true;
         s = s.toLowerCase();
