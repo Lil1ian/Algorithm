@@ -12,7 +12,7 @@ public class Solution {
         if(root.left != null) root.left.next = root.right; 
         if(root.right != null) {
             if(root.next != null) root.right.next = root.next.left;  
-            else root.next = null;
+            else root.right.next = null;
         }
         connect(root.left);
         connect(root.right);
