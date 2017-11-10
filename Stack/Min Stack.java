@@ -13,7 +13,7 @@ Stack<Integer> elements = new Stack<Integer>();
             return;
         }
         
-        // 这个地方太蛋疼了，居然要用equals...
+        
         if (elements.peek().equals(minStack.peek())) {
             minStack.pop();
         }
